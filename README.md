@@ -19,8 +19,18 @@ chmod +x atm.sh
 
 #### ℹ️ How to find the identifier ?
 The unique identifier of an item can be found in the URL. <br>
-For *http://archive.org/details/popeye_taxi-turvey*, the identifier is `popeye_taxi-turvey` <br>
-For *https://archive.org/details/lettuce2023-01-28/Lettuce2023-01-28t04.flac*, the identifier is `lettuce2023-01-28`
+For *https://archive.org/details/gandi*, the identifier is `gandi` <br>
+For *https://archive.org/details/scpo_colo0054/mode/1up*, the identifier is `scpo_colo0054`
 
-## 👀 Demo
-![Image](https://i.imgur.com/D3qIaI3.png)
+## 👀 Example
+```console
+user@machine:~/archiveToMail$ ./atm.sh gandi
+indianturism@gmail.com
+user@linux:~/archiveToMail$
+```
+with alias:
+```console
+user@machine:~$ atm scpo_colo0054
+numerisation.bib@sciencespo.fr
+user@linux:~$
+```
