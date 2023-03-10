@@ -3,7 +3,9 @@ Submit the identifier of an [archive.org](https://archive.org/) item. Script ext
 
 ## 💡 Prerequisite
 * [`jq`](https://stedolan.github.io/jq/download/)
-* `curl`
+  - `sudo apt install jq`
+  - `sudo dnf install jq`
+  - `sudo pacman -S jq`
 
 ## 🛠️ Installation
 ```bash
