@@ -2,16 +2,21 @@
 
 if [ -z $1 ];
 then
-	echo "Usage : ./atm.sh [IDENTIFIER]"
-	exit 1
+    echo "Usage : $(basename $0) [IDENTIFIER]"
+    exit 1
 else
-	RESULT=$(curl -s https://archive.org/metadata/$1/metadata | jq -r .result.uploader)
-	if [ ! -z $RESULT ];
-	then
-		echo $RESULT
-		exit 0
-	else
-		echo "atm : Error"
-		exit 1
-	fi
+    ID=$1
+    EMAIL=$(curl -s https://archive.org/metadata/$ID/metadata | jq -r .result.uploader)
+    if [ $EMAIL == "null" ];
+    then
+        echo "\"$ID\" is not a valid identifier"
+        exit 1
+    elif [ -z $EMAIL ];
+    then
+        echo "$(basename $0): Error"
+        exit 1
+    else
+        echo $EMAIL
+        exit 0
+    fi
 fi
