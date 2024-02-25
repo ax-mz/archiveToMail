@@ -28,11 +28,11 @@ For *https://archive.org/details/scpo_colo0054/mode/1up*, the identifier is `scp
 ```console
 user@machine:~/archiveToMail$ ./atm.sh gandi
 indianturism@gmail.com
-user@machine:~/archiveToMail$
+user@machine:~/archiveToMail$ ▉
 ```
 with alias:
 ```console
 user@machine:~$ atm scpo_colo0054
 numerisation.bib@sciencespo.fr
-user@machine:~$
+user@machine:~$ ▉
 ```
