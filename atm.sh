@@ -23,7 +23,7 @@ IDENTIFIER=$1
 EMAIL=$(curl -s https://archive.org/metadata/${IDENTIFIER}/metadata | jq -r .result.uploader)
 
 if [[ $EMAIL == "null" ]]; then
-    echo "\"${IDENTIFIER}\" is not a valid identifier"
+    echo "\"${IDENTIFIER}\" is not a valid identifier or the uploader is unknown"
     exit 1
 elif [[ -z $EMAIL ]]; then
     echo "$(basename $0): Error"
