@@ -1,6 +1,11 @@
 # 📧 archiveToMail (atm)
 Submit the identifier of an [archive.org](https://archive.org/) item. Script extracts the uploader's email address from its metadata and displays it in terminal.<br>
 
+#### ℹ️ How to find the identifier ?
+The unique identifier of an item can be found in the URL, right between `/details/` and the next `/`. <br>
+For *https://archive.org/details/gandi*, the identifier is `gandi` <br>
+For *https://archive.org/details/scpo_colo0054/mode/1up*, the identifier is `scpo_colo0054`
+
 ## 💡 Prerequisite
 * [`jq`](https://stedolan.github.io/jq/download/)
   - `sudo apt install jq`
@@ -18,12 +23,6 @@ chmod +x atm.sh
 ```bash
 ./atm.sh [IDENTIFIER]
 ```
-
-#### ℹ️ How to find the identifier ?
-The unique identifier of an item can be found in the URL. <br>
-For *https://archive.org/details/gandi*, the identifier is `gandi` <br>
-For *https://archive.org/details/scpo_colo0054/mode/1up*, the identifier is `scpo_colo0054`
-
 ## 👀 Example
 ```console
 user@machine:~/archiveToMail$ ./atm.sh gandi
