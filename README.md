@@ -11,6 +11,7 @@ For *https://archive.org/details/scpo_colo0054/mode/1up*, the identifier is `scp
   - `sudo apt install jq`
   - `sudo dnf install jq`
   - `sudo pacman -S jq`
+  - `brew install jq`
 
 ## 🛠️ Installation
 ```bash
